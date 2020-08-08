@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cokamaclisalon.RezervasyonEkleController">
+    <children>
+      <ImageView fitHeight="400.0" fitWidth="696.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotograflar/ekle.jpg" />
+         </image>
+      </ImageView>
+        <AnchorPane layoutX="14.0" layoutY="14.0" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="300.0">
+            <children>
+                <Label layoutX="14.0" layoutY="19.0" text="Müşteri Ad" />
+                <Label layoutX="14.0" layoutY="54.0" text="Müşteri Soyad" />
+                <Label layoutX="15.0" layoutY="88.0" text="Müşteri Adres" />
+                <Label layoutX="15.0" layoutY="124.0" text="Müşteri Telefon" />
+                <TextField fx:id="mAd" layoutX="124.0" layoutY="15.0" />
+                <TextField fx:id="mSoyad" layoutX="124.0" layoutY="50.0" />
+                <TextField fx:id="mAdres" layoutX="124.0" layoutY="84.0" />
+                <TextField fx:id="mTel" layoutX="124.0" layoutY="120.0" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="210.0" minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="300.0">
+            <children>
+                <Label layoutX="14.0" layoutY="23.0" text="Tarih" />
+                <Label layoutX="14.0" layoutY="58.0" text="Saat" />
+                <TextField fx:id="rSaat" layoutX="120.0" layoutY="54.0" />
+                <DatePicker fx:id="rTarih" layoutX="120.0" layoutY="19.0" />
+            </children>
+        </AnchorPane>
+        <TabPane layoutX="348.0" layoutY="34.0" prefHeight="200.0" prefWidth="326.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Salon Seç">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ComboBox fx:id="salonCB" layoutX="88.0" layoutY="69.0" prefWidth="150.0" promptText="Salon Türü">
+                                   <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Büyük Salon" />
+                                            <String fx:value="Küçük Salon" /> 
+                                            <String fx:value="Ana Salon" />
+                                        </FXCollections>      
+                                    </items>     
+                                </ComboBox>
+                                <Label layoutX="125.0" layoutY="14.0" text="Salon Seç" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Organizasyon Seç">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="100.0" layoutY="14.0" text="Organizasyon Türü" />
+                                <ComboBox fx:id="organizasyonCB" layoutX="88.0" layoutY="61.0" prefWidth="150.0" promptText="Organizasyon Türü">
+                                <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Düğün" />
+                                            <String fx:value="Nişan" /> 
+                                            <String fx:value="Kına" /> 
+                                            <String fx:value="Sünnet" />
+                                            <String fx:value="Balo" />
+                                            <String fx:value="Mezuniyet" /> 
+                                            <String fx:value="Parti" /> 
+                                            <String fx:value="Toplantı" />
+                                        </FXCollections>      
+                                    </items>     
+                                </ComboBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Araç Seç">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ComboBox fx:id="aracCB" layoutX="100.0" layoutY="61.0" prefWidth="150.0" promptText="Araç Türü">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Limuzin" />
+                                            <String fx:value="Klasik" /> 
+                                            <String fx:value="Toplu Taşıma" />
+                                        </FXCollections>      
+                                    </items>     
+                                </ComboBox>
+                                <Label layoutX="140.0" layoutY="14.0" text="Araç Seç" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Ekstra Seç">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="246.0" prefWidth="326.0">
+                            <children>
+                                <TitledPane animated="false" layoutX="14.0" layoutY="14.0" prefHeight="157.0" prefWidth="125.0" text="İKRAM">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                            <children>
+                                                <CheckBox fx:id="yemekCB" layoutX="4.0" layoutY="14.0" mnemonicParsing="false" text="Yemek" />
+                                                <CheckBox fx:id="pastaCB" layoutX="4.0" layoutY="57.0" mnemonicParsing="false" text="Pasta" />
+                                                <CheckBox fx:id="tatliCB" layoutX="3.0" layoutY="100.0" mnemonicParsing="false" text="Tatlı" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                                <TitledPane animated="false" layoutX="171.0" layoutY="14.0" prefHeight="156.0" prefWidth="141.0" text="SALON İÇİ HİZMET">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="143.0" prefWidth="139.0">
+                                            <children>
+                                                <CheckBox fx:id="cekimCB" layoutY="14.0" mnemonicParsing="false" text="Çekim" />
+                                                <CheckBox fx:id="orkestraCB" layoutY="43.0" mnemonicParsing="false" text="Orkestra" />
+                                                <CheckBox fx:id="palyacoCB" layoutY="71.0" mnemonicParsing="false" text="Palyaço" />
+                                                <CheckBox fx:id="patlayicilarCB" layoutY="97.0" mnemonicParsing="false" text="Patlayıcılar" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </TitledPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <Button fx:id="geriButon" layoutX="36.0" layoutY="360.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+        <Button fx:id="hesaplaButon" layoutX="475.0" layoutY="271.0" mnemonicParsing="false" onAction="#hesapla" text="Hesapla" />
+        <Button fx:id="kaydetButon" layoutX="601.0" layoutY="348.0" mnemonicParsing="false" onAction="#kaydet" text="Kaydet" />
+        <Label layoutX="456.0" layoutY="336.0" text="Ücret : " />
+        <Label fx:id="ucretLabel" layoutX="511.0" layoutY="336.0" text="0 TL" />
+    </children>
+</AnchorPane>

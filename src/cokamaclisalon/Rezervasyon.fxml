@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1325.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cokamaclisalon.RezervasyonController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="1325.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../fotograflar/rezervasyon.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="8.0" layoutY="79.0" prefHeight="237.0" prefWidth="1310.0">
+        <columns>
+          <TableColumn prefWidth="84.0" text="AD" />
+          <TableColumn prefWidth="92.0" text="SOYAD" />
+            <TableColumn prefWidth="224.0" text="ADRES" />
+            <TableColumn minWidth="0.0" prefWidth="106.0" text="TELEFON" />
+            <TableColumn prefWidth="94.0" text="TARİH" />
+            <TableColumn prefWidth="69.0" text="SAAT" />
+            <TableColumn text="SALON" />
+            <TableColumn prefWidth="106.0" text="ORGANİZASYON" />
+            <TableColumn prefWidth="115.0" text="ARAÇ" />
+            <TableColumn prefWidth="260.0" text="EKSTRA" />
+            <TableColumn prefWidth="77.0" text="ÜCRET" />
+        </columns>
+      </TableView>
+      <Label layoutX="578.0" layoutY="29.0" text="REZERVASYONLAR" textFill="RED">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="eklebuton" layoutX="14.0" layoutY="336.0" mnemonicParsing="false" onAction="#ekle" text="EKLE" textFill="LIME" />
+      <Button fx:id="guncellebuton" layoutX="206.0" layoutY="336.0" mnemonicParsing="false" onAction="#guncelle" text="GÜNCELLE" textFill="#2b60de" />
+      <Button fx:id="silbuton" layoutX="117.0" layoutY="336.0" mnemonicParsing="false" onAction="#sil" text="SİL" textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+***
+Rezervasyon :
+AD
+sad
+SOYAD
+asda
+ADRES
+asd
+TELEFON
+asda
+TARİH
+2019-05-15
+SAAT
+asd
+SALON
+Büyük Salon
+ORGANİZASYON
+Düğün
+ARAÇ
+Toplu Taşıma
+EKSTRA
+-Yemek -Palyaço  -Patlayıcılar  
+ÜCRET
+4250.0
+AKTİF Mİ
+true
+***
+Rezervasyon :
+AD
+SD
+SOYAD
+SAD
+ADRES
+ASDA
+TELEFON
+SAD
+TARİH
+2019-05-03
+SAAT
+ASDA
+SALON
+Küçük Salon
+ORGANİZASYON
+Nişan
+ARAÇ
+Toplu Taşıma
+EKSTRA
+-Çekim  -Orkestra  
+ÜCRET
+2450.0
+AKTİF Mİ
+true
+***
+Rezervasyon :
+AD
+asd
+SOYAD
+asd
+ADRES
+asd
+TELEFON
+asd
+TARİH
+2019-05-10
+SAAT
+156
+SALON
+Küçük Salon
+ORGANİZASYON
+Kına
+ARAÇ
+Klasik
+EKSTRA
+-Yemek 
+ÜCRET
+3000.0
+AKTİF Mİ
+false
+***
