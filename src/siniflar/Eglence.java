@@ -7,7 +7,7 @@ package siniflar;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public class Eglence extends Organizasyon implements OrganizasyonInterface {
      public Eglence(String tur){

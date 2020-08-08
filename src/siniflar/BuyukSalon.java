@@ -7,7 +7,7 @@ package siniflar;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public class BuyukSalon extends Salon implements SalonInterface{   
      public BuyukSalon(){

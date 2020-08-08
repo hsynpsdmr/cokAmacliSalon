@@ -7,7 +7,7 @@ package siniflar;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public interface OrganizasyonInterface {
     public double getFiyat();

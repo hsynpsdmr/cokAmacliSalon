@@ -7,7 +7,7 @@ package siniflar;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public class Merasim extends Organizasyon implements OrganizasyonInterface {
 

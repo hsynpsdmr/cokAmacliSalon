@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public class GirisController {
     public TextField kadi;

@@ -37,7 +37,7 @@ import siniflar.Rezervasyon;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public class RezervasyonController {
 

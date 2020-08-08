@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 /**
  *
- * @author Seyf
+ * @author hsynpsdmr
  */
 public class Rezervasyon {
 
